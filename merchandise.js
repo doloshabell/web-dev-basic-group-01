@@ -15,7 +15,7 @@ async function getDataDigimon() {
       // tampilkan data ke HTML
       for (let i = 0; i < 4; i++) {
         digimonContainer.innerHTML += `
-        <div class="col-lg-3 col-md-4 col-10">
+        <div class="col">
         <div class="card">
         <image src=${result[i].img} width=200 />
         <div class="card-body">

@@ -15,14 +15,12 @@ async function getDataDigimon() {
       // tampilkan data ke HTML
       for (let i = 0; i < 4; i++) {
         digimonContainer.innerHTML += `
-        <div class="col">
         <div class="card">
         <image src=${result[i].img} width=200 />
         <div class="card-body">
         <h5 class="card-title">${result[i].name}</h5>
         <p>Price</p>
         <a href="#" class="btn btn-primary">Add to Cart</a>
-        </div>
         </div>
         </div>
         `;

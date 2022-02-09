@@ -1,5 +1,5 @@
 async function getKategoriDaerah(){
-    const url = 'https://6201e508b8735d00174cb61f.mockapi.io/provinsi/daerah'
+    const url = 'https://6201e508b8735d00174cb61f.mockapi.io/provinsi/kategoridaerah'
 
 
 try{

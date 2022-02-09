@@ -14,7 +14,7 @@ try{
             <div class="card m-3" style="width: 25rem;">
                 <img src=${(result[i].img)} width="350px" height="250px" class="card-img-top">
                 <div class="card-body d-grid">
-                    <a href="https://www.google.com" class="btn btn-secondary stretched-link">${result[i].name}</a>
+                    <a href="/daerah.html" class="btn btn-secondary stretched-link">${result[i].name}</a>
                 </div>
             </div>
         `;
@@ -39,7 +39,7 @@ try{
             <div class="card m-3" style="width: 19rem;">
                 <img src=${(result[i].img)} width="300px" height="250px" class="card-img-top">
                 <div class="card-body d-grid">
-                    <a href="https://www.google.com" class="btn btn-secondary stretched-link">${result[i].name}</a>
+                    <a href="/single-merchandise.html" class="btn btn-secondary stretched-link">${result[i].name}</a>
                 </div>
             </div>
         `;

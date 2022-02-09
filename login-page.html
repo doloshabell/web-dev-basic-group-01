@@ -39,11 +39,17 @@
                             <p class="text-secondary mt-1 mb-2">Silahkan Login menggunakan username yang terdaftar</p>
                         </div>
 
+                        <div class="d-none alert alert-warning alert-dismissible fade show" role="alert">
+                            <span class="d-none">Password salah.</span>
+                            <span class="d-none">Email anda belum terdaftar.</span>
+                            <button type="button" class="btn-close"></button>
+                        </div>
+
                         <form id="loginForm">
                             <div class="mb-3">
-                                <label for="username" class="form-label">Username</label>
+                                <label for="email" class="form-label">Email</label>
                                 <div class="input-group mb-1">
-                                    <input type="text" class="form-control" placeholder="your username" id="username"
+                                    <input type="email" class="form-control" placeholder="yours@email.com" id="email"
                                         autocomplete="off">
                                 </div>
                             </div>

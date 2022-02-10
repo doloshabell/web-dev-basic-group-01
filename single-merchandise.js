@@ -16,26 +16,18 @@ async function getBarangDetail() {
           />
         </div>
         <div class="pro-img-list">
-          <a href="#">
             <img
               src=${result[i].img2} width=115 height=100
             />
-          </a>
-          <a href="#">
             <img
               src=${result[i].img3} width=115 height=100
             />
-          </a>
-          <a href="#">
             <img
               src=${result[i].img4} width=115 height=100
             />
-          </a>
-          <a href="#">
             <img
               src=${result[i].img5} width=115 height=100
             />
-          </a>
         </div>
       </div>
 
@@ -58,7 +50,7 @@ async function getBarangDetail() {
         <div class="form-group">
         <br>
         <p>
-          <button class="btn btn-round btn-danger" type="button"  onclick="addToCart('Getas', 26.000, 1)">
+          <button class="btn btn-round btn-danger" data-bs-toggle="modal" data-bs-target="#addToCart" onclick="addToCart('Getas', 26000, 1)" ">
             Add to Cart
           </button>
         </p>

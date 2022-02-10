@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // cara async await
 async function getDataDigimon() {
     const URL = "https://digimon-api.vercel.app/api/digimon";
@@ -47,3 +48,5 @@ async function getDataDigimon() {
   
   // getDataDigimonPromise();
   getDataDigimon();
+=======
+>>>>>>> 6bd077d93cd629dd375f264a4b986658504fea42

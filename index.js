@@ -14,7 +14,7 @@ try{
             <div class="card m-3" style="width: 25rem;">
                 <img src=${(result[i].img)} width="350px" height="250px" class="card-img-top">
                 <div class="card-body d-grid">
-                    <a href="/daerah.html" class="btn btn-secondary stretched-link">${result[i].name}</a>
+                    <a href="/single-daerah-kategori.html" class="btn btn-secondary stretched-link">${result[i].name}</a>
                 </div>
             </div>
         `;

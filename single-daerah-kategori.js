@@ -1,27 +1,49 @@
-// cara async await
-async function getDataDigimon() {
-    const URL = "https://digimon-api.vercel.app/api/digimon";
+async function getDaerah() {
+  const URL = "https://6201e508b8735d00174cb61f.mockapi.io/provinsi/daerah";
+
+  try {
+    const response = await fetch(URL);
+    const result = await response.json();
+
+    const daerah = document.querySelector(".daerah");
+
+    for (let i = 2; i <= 2; i++) {
+      daerah.innerHTML += `
+      <img src=${result[i].img} class="card-img">
+      <div class="card-img-overlay d-flex justify-content-center align-items-end">
+      <h1 class="card-title text-center">${result[i].name}</h1>
+      </div>
+      </div>
+      `;
+    }
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+function handleClick(data) {
+  console.log(data);
+}
+
+
+async function getKategoriDaerah() {
+    const URL = "https://6201e508b8735d00174cb61f.mockapi.io/provinsi/kategoridaerah";
   
     try {
-      // nerima paket
       const response = await fetch(URL);
-  
-      // unboxing paket
       const result = await response.json();
   
-      // ambil element HTML
-      const digimonContainer = document.querySelector(".digimon-container");
+      const kategoriDaerah = document.querySelector(".kategori-daerah");
   
-      // tampilkan data ke HTML
       for (let i = 0; i < 5; i++) {
-        digimonContainer.innerHTML += `
+        kategoriDaerah.innerHTML += `
         <div class="col">
         <div class="card">
-        <image src=${result[i].img} width=200 />
+        <image src=${result[i].img} width=200 height=300 />
         <div class="card-body">
         <h5 class="card-title">${result[i].name}</h5>
-        <p>Price</p>
-        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <br>
+        <a href="#" class="btn btn-primary">Lihat</a>
         </div>
         </div>
         </div>
@@ -36,16 +58,5 @@ async function getDataDigimon() {
     console.log(data);
   }
   
-  // cara promise
-  // function getDataDigimonPromise() {
-  //   const URL = "https://digimon-api.vercel.app/api/digimon";
-  //   fetch(URL)
-  //     .then((response) => response.json())
-  //     .then((result) => {
-  //       console.log(result[0]);
-  //     })
-  //     .catch((err) => console.log(err));
-  // }
-  
-  // getDataDigimonPromise();
-  getDataDigimon();
+  getDaerah();
+  getKategoriDaerah();

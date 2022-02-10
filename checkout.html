@@ -67,7 +67,7 @@
           </a>
       </div>
   </nav>
-    <!-- checkout page from template -->
+    <!-- checkout page  -->
     <div class="container">
         <div class="py-5 text-center">
           
@@ -196,7 +196,28 @@
                 </div>
               </div>
               <hr class="mb-4">
-              <button class="btn btn-primary btn-lg btn-block mb-5" type="submit">Submit</button>
+              <!-- button -->
+              <button class="btn btn-primary btn-lg btn-block mb-5" type="button" data-bs-toggle="modal"
+              data-bs-target="#cekLoginModal">Submit</button>
+            <!-- modal -->
+            <div class="modal fade" id="cekLoginModal" tabindex="-1" aria-labelledby="cekLoginLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="cekLoginLabel">Terima Kasih</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/pictures/congrats.svg" height="300" width="400">
+                    <h2 class="text-center">Barang sedang di antar, Mohon di tunggu 1-2 tahun</h2>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn btn-primary" href="/index.html">Close</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             </form>
           </div>
         </div>

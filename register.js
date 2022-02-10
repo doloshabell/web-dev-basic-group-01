@@ -18,6 +18,5 @@ function register() {
   };
 
   localStorage.setItem("user", JSON.stringify(userData));
-  console.log(userNameInput, emailInput, passInput);
   location="./profile-page.html";
 };

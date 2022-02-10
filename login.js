@@ -1,8 +1,8 @@
 const elLogin = document.querySelector("#login");
 elLogin.onclick = login;
 
-function login() {
-  // e.preventDefault();
+function login(e) {
+  e.preventDefault();
   const emailInput = document.querySelector("#email").value;
   const passwordInput = document.querySelector("#password").value;
 
@@ -16,6 +16,7 @@ function login() {
   ) {
     location="./index.html";
     console.log("login success");
+    localStorage.setItem("isLogin",true);
   } else {
     alert("email atau password anda salah");
   }

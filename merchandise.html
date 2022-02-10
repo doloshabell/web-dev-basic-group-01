@@ -1,258 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="merchandise.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <img src="/pictures/hands.png" width="50px" />
-        <a class="navbar-brand p-3" href="#">BuahTangan</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Daerah
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Yogyakarta</a></li>
-                <li><a class="dropdown-item" href="#">Manado</a></li>
-                <li><a class="dropdown-item" href="#">Medan</a></li>
-                <li><a class="dropdown-item" href="#">Bali</a></li>
-                <li><a class="dropdown-item" href="#">Pontianak</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Kategori
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Pakaian</a></li>
-                <li><a class="dropdown-item" href="#">Patung</a></li>
-                <li><a class="dropdown-item" href="#">Makanan</a></li>
-                <li><a class="dropdown-item" href="#">Kain</a></li>
-                <li><a class="dropdown-item" href="#">Senjata</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              <img src="/pictures/find.png" width="20px" />
-            </button>
-          </form>
-        </div>
-        <button class="btn btn-outline-info m-2">
-          <img src="/pictures/shopping-basket.png" width="20px" />
-        </button>
-        <button class="btn btn-outline-primary rounded-pill m-1">
-          <img src="/pictures/private-account.png" width="30px" />
-        </button>
-      </div>
-    </nav>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <!--Card-->
+  <link rel="stylesheet" href="merchandise.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <div
-        class="row row-cols-1 row-cols-md-4 mt-5 g-2 text-center justify-content-center"
-      >
-        <div class="col justify-content-center">
-          <div class="card h-100">
-            <img
-              src="https://images.tokopedia.net/img/cache/500-square/product-1/2020/6/8/8747417/8747417_90d7b529-2aa9-4df0-bec1-611c1b6f4ba0_1080_1080.jpg"
-              class="card-img-top"
-              alt="kerupuk"
-              width="386"
-              height="386"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Kerupuk Seblak</h5>
-              <br>
-              <a href="#" class="btn btn-primary">Detail Produk</a>
-            </div>
-          </div>
-        </div>
-        <div class="col justify-content-center">
-          <div class="card h-100">
-            <img
-              src="https://id-live-05.slatic.net/p/49c36ae32668ff0f4c29174f8641cfa7.jpg_2200x2200q80.jpg_.webp"
-              class="card-img-top"
-              alt="basreng"
-              height="386"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Basreng</h5>
-              <br>
-              <a href="#" class="btn btn-primary">Detail Produk</a>
-            </div>
-          </div>
-        </div>
-        <div class="col justify-content-center">
-          <div class="card h-100">
-            <img
-              src="https://img-global.cpcdn.com/recipes/23dbf36c56ded168/751x532cq70/keripik-pisang-renyah-gurih-tanpa-kapur-sirih-foto-resep-utama.jpg"
-              class="card-img-top"
-              alt="keripik pisang"
-              height="386"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Keripik Pisang</h5>
-              <br>
-              <a href="#" class="btn btn-primary">Detail Produk</a>
-            </div>
-          </div>
-        </div>
-        <div class="col justify-content-center">
-          <div class="card h-100">
-            <img
-              src="https://img-global.cpcdn.com/recipes/87b2211df1e472aa/400x400cq70/photo.jpg"
-              class="card-img-top"
-              alt="usus crispy"
-              height="386"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Usus Crispy</h5>
-              <br>
-              <a href="#" class="btn btn-primary">Detail Produk</a>
-            </div>
-          </div>
-        </div>
-        <div class="col justify-content-center">
-          <div class="card h-100">
-            <img
-              src="https://cdn.idntimes.com/content-images/community/2020/11/125158624-230176438679361-6060786447420209732-n-2b83bc8b0667f3d4545953e515730cc9_600x400.jpg"
-              class="card-img-top"
-              alt="kembang goyang"
-              height="386"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Kembang Goyang</h5>
-              <br>
-              <a href="#" class="btn btn-primary">Detail Produk</a>
-            </div>
-          </div>
-        </div>
-        <div class="col justify-content-center">
-          <div class="card h-100">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Rengginang.jpg"
-              class="card-img-top"
-              alt="rengginang"
-              height="386"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Rengginang</h5>
-              <br>
-              <a href="#" class="btn btn-primary">Detail Produk</a>
-            </div>
-          </div>
-        </div>
-        <div class="col justify-content-center">
-          <div class="card h-100">
-            <a href="single-merchandise.html">
-            <img
-              src="https://cf.shopee.co.id/file/2fb76ebe33f60a1d4f118c04e4050198"
-              class="card-img-top"
-              alt="getas"
-              height="386"
-            />
+      <img src="/pictures/hands.png" width="50px" />
+      <a class="navbar-brand p-3" href="#">BuahTangan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Daerah
             </a>
-            <div class="card-body">
-              <h5 class="card-title">Getas</h5>
-              <br>
-              <a href="cartpage.html" class="btn btn-primary">Detail Produk</a>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Yogyakarta</a></li>
+              <li><a class="dropdown-item" href="#">Manado</a></li>
+              <li><a class="dropdown-item" href="#">Medan</a></li>
+              <li><a class="dropdown-item" href="#">Bali</a></li>
+              <li><a class="dropdown-item" href="#">Pontianak</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Kategori
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Pakaian</a></li>
+              <li><a class="dropdown-item" href="#">Patung</a></li>
+              <li><a class="dropdown-item" href="#">Makanan</a></li>
+              <li><a class="dropdown-item" href="#">Kain</a></li>
+              <li><a class="dropdown-item" href="#">Senjata</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            <img src="/pictures/find.png" width="20px" />
+          </button>
+        </form>
+      </div>
+      <button class="btn btn-outline-info m-2">
+        <img src="/pictures/shopping-basket.png" width="20px" />
+      </button>
+      <button class="btn btn-outline-primary rounded-pill m-1">
+        <img src="/pictures/private-account.png" width="30px" />
+      </button>
+    </div>
+  </nav>
+
+  <!--Card-->
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-4 mt-5 g-2 text-center justify-content-center">
+      <div class="col justify-content-center">
+        <div class="card h-100">
+          <img
+            src="https://images.tokopedia.net/img/cache/500-square/product-1/2020/6/8/8747417/8747417_90d7b529-2aa9-4df0-bec1-611c1b6f4ba0_1080_1080.jpg"
+            class="card-img-top" alt="kerupuk" width="386" height="386" />
+          <div class="card-body">
+            <h5 class="card-title">Kerupuk Seblak</h5>
+            <br>
+            <a href="#" class="btn btn-primary">Detail Produk</a>
           </div>
         </div>
-        <div class="col justify-content-center">
-          <div class="card h-100">
-            <img
-              src="https://www.pegipegi.com/travel/wp-content/uploads/2015/10/amplang-kuku-macan.png"
-              class="card-img-top"
-              alt="kuku macan"
-              height="386"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Kuku Macan</h5>
-              <br>
-              <a href="#" class="btn btn-primary">Detail Produk</a>
-            </div>
+      </div>
+      <div class="col justify-content-center">
+        <div class="card h-100">
+          <img src="https://id-live-05.slatic.net/p/49c36ae32668ff0f4c29174f8641cfa7.jpg_2200x2200q80.jpg_.webp"
+            class="card-img-top" alt="basreng" height="386" />
+          <div class="card-body">
+            <h5 class="card-title">Basreng</h5>
+            <br>
+            <a href="#" class="btn btn-primary">Detail Produk</a>
+          </div>
+        </div>
+      </div>
+      <div class="col justify-content-center">
+        <div class="card h-100">
+          <img
+            src="https://img-global.cpcdn.com/recipes/23dbf36c56ded168/751x532cq70/keripik-pisang-renyah-gurih-tanpa-kapur-sirih-foto-resep-utama.jpg"
+            class="card-img-top" alt="keripik pisang" height="386" />
+          <div class="card-body">
+            <h5 class="card-title">Keripik Pisang</h5>
+            <br>
+            <a href="#" class="btn btn-primary">Detail Produk</a>
+          </div>
+        </div>
+      </div>
+      <div class="col justify-content-center">
+        <div class="card h-100">
+          <img src="https://img-global.cpcdn.com/recipes/87b2211df1e472aa/400x400cq70/photo.jpg" class="card-img-top"
+            alt="usus crispy" height="386" />
+          <div class="card-body">
+            <h5 class="card-title">Usus Crispy</h5>
+            <br>
+            <a href="#" class="btn btn-primary">Detail Produk</a>
+          </div>
+        </div>
+      </div>
+      <div class="col justify-content-center">
+        <div class="card h-100">
+          <img
+            src="https://cdn.idntimes.com/content-images/community/2020/11/125158624-230176438679361-6060786447420209732-n-2b83bc8b0667f3d4545953e515730cc9_600x400.jpg"
+            class="card-img-top" alt="kembang goyang" height="386" />
+          <div class="card-body">
+            <h5 class="card-title">Kembang Goyang</h5>
+            <br>
+            <a href="#" class="btn btn-primary">Detail Produk</a>
+          </div>
+        </div>
+      </div>
+      <div class="col justify-content-center">
+        <div class="card h-100">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Rengginang.jpg" class="card-img-top"
+            alt="rengginang" height="386" />
+          <div class="card-body">
+            <h5 class="card-title">Rengginang</h5>
+            <br>
+            <a href="#" class="btn btn-primary">Detail Produk</a>
+          </div>
+        </div>
+      </div>
+      <div class="col justify-content-center">
+        <div class="card h-100">
+          <a href="single-merchandise.html">
+            <img src="https://cf.shopee.co.id/file/2fb76ebe33f60a1d4f118c04e4050198" class="card-img-top" alt="getas"
+              height="386" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Getas</h5>
+            <br>
+            <a href="cartpage.html" class="btn btn-primary">Detail Produk</a>
+          </div>
+        </div>
+      </div>
+      <div class="col justify-content-center">
+        <div class="card h-100">
+          <img src="https://www.pegipegi.com/travel/wp-content/uploads/2015/10/amplang-kuku-macan.png"
+            class="card-img-top" alt="kuku macan" height="386" />
+          <div class="card-body">
+            <h5 class="card-title">Kuku Macan</h5>
+            <br>
+            <a href="#" class="btn btn-primary">Detail Produk</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <div id="footer" class="container-fluid pt-4">
-      <footer
-        id="sticky-footer"
-        class="flex-shrink-0 py-4 bg-dark text-white-50"
-      >
-        <div class="container text-center">
-          <small>Copyright 2077 &copy; BuahTangan</small>
-        </div>
-      </footer>
-    </div>
+  <!-- Footer -->
+  <div id="footer" class="container-fluid pt-4">
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>Copyright 2077 &copy; BuahTangan</small>
+      </div>
+    </footer>
+  </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 
-    <script src="./merchandise.js"></script>
+  <script src="./merchandise.js"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>

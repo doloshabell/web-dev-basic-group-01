@@ -112,29 +112,26 @@ import {
   })
   
   // REGISTER EVENT LISTENER
-  const registFormEl = document.getElementById("registForm")
+  const registFormEl = document.querySelector("#registForm")
   
   if(registFormEl) {
-    const name = document.getElementById("name")
-    const email = document.getElementById("email")
-    const password = document.getElementById("password")
-    const confirmPass = document.getElementById("konfirmasiPassword")
+    const username = document.querySelector("#username")
+    const email = document.querySelector("#email")
+    const password = document.querySelector("#password")
     
     const elements = {
-      name: name,
+      username: username,
       email: email,
       password: password,
-      confirmPass: confirmPass,
     }
     
     registFormEl.addEventListener("submit", (e) => {
       e.preventDefault()
       
       let data = {
-        name: name.value.trim(),
+        username: username.value.trim(),
         email: email.value.trim(),
         password: password.value.trim(),
-        confirmPass: confirmPass.value.trim(),
       }
       
       let isValid = validateRegister(elements, data)
@@ -167,26 +164,23 @@ import {
     
     setLocalStorage("users", users)
     setLocalStorage("login", data.email)
-    window.location.href = '../index.html'
+    window.location.href = './index.html'
   }
-  
-  const passwordConfirmation = (password, confirmPassword) => password === confirmPassword
   
   const validateRegister = (elements, data) => {
     // GET ALL ELEMENTS NEEDED
-    let namePrevSib = elements.name.previousElementSibling
+    let usernamePrevSib = elements.username.previousElementSibling
     let emailPrevSib = elements.email.previousElementSibling
     let passwordPrevSib = elements.password.previousElementSibling
-    let confirmPassPrevSib = elements.confirmPass.previousElementSibling
     const alert = document.querySelector(".alert")
-    const validName = /.+/
+    const validUsername = /.+/
   
-    if(validName.test(data.name)) {
-      elements.name.classList.remove("is-invalid")
-      namePrevSib.classList.remove("border-danger")
-      elements.name.parentElement.nextElementSibling.classList.add("d-none")
-      elements.name.classList.add("is-valid")
-      namePrevSib.classList.add("border-success")
+    if(validUsername.test(data.username)) {
+      elements.username.classList.remove("is-invalid")
+      usernamePrevSib.classList.remove("border-danger")
+      elements.username.parentElement.nextElementSibling.classList.add("d-none")
+      elements.username.classList.add("is-valid")
+      usernamePrevSib.classList.add("border-success")
   
       if(validateEmail(data.email)) {
         elements.email.classList.remove("is-invalid")
@@ -206,15 +200,6 @@ import {
             elements.password.parentElement.nextElementSibling.classList.remove("text-danger")
             elements.password.classList.add("is-valid")
             passwordPrevSib.classList.add("border-success")
-  
-            if(passwordConfirmation(data.password, data.confirmPass)) {
-              return true
-            } else {
-              elements.confirmPass.classList.add("is-invalid")
-              confirmPassPrevSib.classList.add("border", "border-danger")
-              elements.confirmPass.parentElement.nextElementSibling.classList.remove("d-none")
-              return false
-            }
           } else {
             elements.password.classList.add("is-invalid")
             passwordPrevSib.classList.add("border", "border-danger")
@@ -230,9 +215,9 @@ import {
         return false
       }
     } else {
-      elements.name.classList.add("is-invalid")
-      namePrevSib.classList.add("border", "border-danger")
-      elements.name.parentElement.nextElementSibling.classList.remove("d-none")
+      elements.username.classList.add("is-invalid")
+      usernamePrevSib.classList.add("border", "border-danger")
+      elements.username.parentElement.nextElementSibling.classList.remove("d-none")
       return false
     }
     

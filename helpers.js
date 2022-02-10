@@ -12,7 +12,7 @@ export const validateEmail = (email) => {
   // Password validation
   export const validatePassword = (password) => {
     const validPassword = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/; //min 8 letter password, with at least a symbol, upper and lower case letters and a number
-  
+    // Haha@12
     return validPassword.test(password)? true : false
   }
   

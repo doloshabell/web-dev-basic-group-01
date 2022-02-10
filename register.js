@@ -1,22 +1,23 @@
-function regist(e){
-  e.preventDefault();
-
-  let elUsername = document.querySelector("#username").value;
-  let elEmail = document.querySelector("#email").value;
-  let elPassword = document.querySelector("#password").value;
-
-  let dataUser =  {
-    username: elUsername,
-    email: elEmail,
-    password: elPassword,
-  }
-
-  let dataJSON = JSON.stringify(dataUser);
-  localStorage.setItem("user", dataJSON);
-  window.location.href = "./index.html";
-}
-
 const showPasswordEl = document.querySelector("#showPassword")
   showPasswordEl.addEventListener('click', () => {
     (showPasswordEl.checked)? password.type = "text" : password.type = "password"
   })
+
+const elRegist = document.querySelector("#register");
+elRegist.onclick = register;
+
+function register() {
+  const userNameInput = document.querySelector("#username").value;
+  const emailInput = document.querySelector("#email").value;
+  const passInput = document.querySelector("#password").value;
+
+  let userData = {
+    username: userNameInput,
+    email: emailInput,
+    password: passInput,
+  };
+
+  localStorage.setItem("user", JSON.stringify(userData));
+  console.log(userNameInput, emailInput, passInput);
+  location="./profile-page.html";
+};
